@@ -14,6 +14,7 @@ import {TechnologiesComponent} from './technologies/technologies.component';
 import {TechnologyComponent} from './technologies/technology/technology.component';
 import {ToolComponent} from './technologies/tool/tool.component';
 import {AboutComponent} from './about/about.component';
+import {FooterComponent} from './footer/footer.component';
 
 @NgModule({
 
@@ -32,7 +33,8 @@ import {AboutComponent} from './about/about.component';
         TechnologiesComponent,
         TechnologyComponent,
         ToolComponent,
-        AboutComponent
+        AboutComponent,
+        FooterComponent
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -33,6 +33,12 @@ about{
         font-size: 22px;
         line-height: 1.55;
         color: #999;
+        .cv-link{
+            @include button(transparent ,$flat-green, $flat-green, white);
+            display: block;
+            margin-top: 40px;
+            width: 250px;
+        }
 
     }
 
