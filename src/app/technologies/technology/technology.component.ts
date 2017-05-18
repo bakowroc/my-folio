@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {
+    Component,
+    OnInit,
+    Input
+} from '@angular/core';
 
 @Component({
     selector: 'technology',
@@ -6,7 +10,10 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['technology.component.scss']
 })
 export class TechnologyComponent implements OnInit {
+    @Input()
+        technology: Object;
+
     constructor() {  }
 
-  ngOnInit() {}
+    ngOnInit() {}
 }

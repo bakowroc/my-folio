@@ -11,6 +11,7 @@ import {ProjectsComponent} from './projects/projects.component'
 import {ProjectComponent} from './projects/project/project.component'
 import {TechnologiesComponent} from './technologies/technologies.component';
 import {TechnologyComponent} from './technologies/technology/technology.component';
+import {ToolComponent} from './technologies/tool/tool.component';
 import {AboutComponent} from './about/about.component';
 
 @NgModule({
@@ -28,6 +29,7 @@ import {AboutComponent} from './about/about.component';
         ProjectComponent,
         TechnologiesComponent,
         TechnologyComponent,
+        ToolComponent,
         AboutComponent
     ],
     providers: [],
