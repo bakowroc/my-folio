@@ -1,0 +1,32 @@
+technology{
+    width: 100%;
+    h3{
+        float: left;
+        font-size: 18px;
+        color: #f0f0f0;
+        margin: 0;
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+    margin-bottom: 20px;
+    float: left;
+    .progress-bar{
+        float: left;
+        width: 100%;
+        height: 2px;
+        background: rgba(black, 0.05);
+        position: relative;
+        .progress{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background: #f0f0f0;
+            @for $i from 1 through 10{
+                &.#{progress}-#{$i}{
+                    width: $i * 10%;
+                }
+            }
+        }
+    }
+}

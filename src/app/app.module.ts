@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core'
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 
 import {AppComponent} from './app.component'
 import {HeaderComponent} from './header/header.component'
@@ -19,6 +20,7 @@ import {AboutComponent} from './about/about.component';
     imports: [
         BrowserModule,
         FormsModule,
+        Angular2FontawesomeModule
     ],
     declarations: [
         AppComponent,

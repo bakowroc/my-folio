@@ -10,7 +10,7 @@ import {
 })
 export class ToolComponent implements OnInit {
     @Input()
-        tool: string;
+        tool: Object;
     constructor() {  }
 
   ngOnInit() {}

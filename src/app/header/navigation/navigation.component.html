@@ -1,7 +1,7 @@
 <nav class="main-navigation">
     <ul>
         <li *ngFor = "let li of Menu">
-            <a href="#">{{li.name}}</a>
+            <a href="{{li.link}}"><i fa [name]="li.icon"></i></a>
         </li>
     </ul>
 </nav>
