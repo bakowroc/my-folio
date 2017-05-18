@@ -1,16 +1,36 @@
 navigation{
     nav.main-navigation{
-        @include vertical-menu(white, 60px);
-        float: right;
-        margin-right: 60px;
-        margin-top: 3px;
+        float: left;
+        width: 100%;
+        font-family: 'Fira Mono';
         ul{
+            display: block;
+            float: left;
+            width: 100%;
             li{
+                display: block;
+                margin-bottom: 40px;
+                float: left;
+                width: 100%;
+                &:first-child{
+                    margin-top: 20px;
+                }
+                &:last-child{
+                    margin-bottom: 20px;
+                }
                 a{
+                    float: left;
+                    width: 100%;
                     text-transform: uppercase;
-                    font-weight: 600;
+                    font-weight: 700;
+                    font-size: 30px;
+                    text-align: center;
+                    color: $flat-green;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
                     &:hover{
-                        color: $flat-green;
+                        color: #fff;
+                        transition: all 0.3s ease;
                     }
                 }
             }

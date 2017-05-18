@@ -27,20 +27,17 @@
     border: none;
 }
 
-@mixin button($background, $padding: 7px, $type: 'normal', $radius: 2px){
+@mixin button($background, $border-color, $font-color, $hover-color){
     text-decoration: none;
     width: 100%;
-    padding: $padding;
-    @if $type == 'square' {
-       padding: $padding 2* $padding;
-    }
+    padding: 10px;
     text-align: center;
     background: $background;
-    border-bottom: 2px solid darken($background, 10%);
-    color: #fff;
-    @include border-radius($radius);
+    border: 1px solid $border-color;
+    color: $font-color;
     &:hover{
-        background: lighten($background, 5%);
+        background: lighten($border-color, 5%);
+        color: $hover-color;
         cursor: pointer;
     }
 }

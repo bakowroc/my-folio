@@ -1,0 +1,97 @@
+project{
+    width: 33.3333333%;
+    float: left;
+    height: 300px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background: $flat-green;
+    margin-bottom: 20px;
+    &:hover {
+        .img-background{
+            opacity: 0.1;
+            transform: scale(1.2);
+        }
+        .project-overflow{
+            .name{
+                background: transparent;
+            }
+            .details{
+                opacity: 1;
+            }
+        }
+    }
+    .img-background{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: green;
+        z-index: $normalized;
+        opacity: 1;
+
+        img{
+            width: 100%;
+            filter: grayscale(70%);
+        }
+    }
+    .project-overflow{
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        top: 20px;
+        padding: 20px;
+        border: 1px solid rgba($dark-blue-grey, 0.15);
+        float: left;
+        z-index: $like-a-popup;
+        overflow: hidden;
+        .name{
+            margin: 0;
+            color: white;
+            font-size: 36px;
+            background: rgba($flat-green, 0.9);
+            width: auto;
+            float: left;
+        }
+        .details{
+            opacity: 0;
+            float: left;
+            float: left;
+            clear: both;
+            margin-top: 20px;
+            .technologies{
+                float: left;
+                .tech{
+                    float: left;
+                    margin-right: 5px;
+                    background: #f0f0f0;
+                    padding: 3px;
+                    text-align: center;
+                    color: $flat-green;
+                }
+            }
+            .sources{
+                float: right;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+                width: auto;
+                .link{
+                    @include button(transparent, white, white, $flat-green);
+                    float: left;
+                    width: 140px;
+                }
+                .preview{
+                    @include button(white, white, $flat-green, $flat-green);
+                    float: right;
+                    width: 140px;
+                }
+            }
+        }
+    }
+
+}

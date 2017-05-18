@@ -1,1 +1,15 @@
-<h1>{{project.name}}</h1>
+<div class="img-background"><img src="../src/assets/img/{{project.img}}.jpg"></div>
+<div class="project-overflow">
+    <h1 class="name">{{project.name}}</h1>
+    <div class="details">
+        <div class="technologies">
+            <span class="tech" *ngFor = "let tech of project.technologies">
+                {{tech.name}}
+            </span>
+        </div>
+        <div class="sources">
+            <a href="#" class="link">Source code</a>
+            <a href="#" class="preview">Preview</a>
+        </div>
+    </div>
+</div>
