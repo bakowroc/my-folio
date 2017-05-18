@@ -1,0 +1,19 @@
+navigation{
+    nav.main-navigation{
+        @include vertical-menu(white, 60px);
+        float: right;
+        margin-right: 60px;
+        margin-top: 3px;
+        ul{
+            li{
+                a{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    &:hover{
+                        color: $flat-green;
+                    }
+                }
+            }
+        }
+    }
+}
