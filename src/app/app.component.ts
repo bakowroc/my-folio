@@ -1,4 +1,9 @@
-import {Component} from '@angular/core';
+import {
+    Component,
+    AfterViewChecked,
+    OnInit
+}
+from '@angular/core';
 
 
 @Component ({
@@ -7,6 +12,15 @@ import {Component} from '@angular/core';
     styleUrls: ['app.component.scss']
 })
 
-export class AppComponent{
+export class AppComponent implements AfterViewChecked, OnInit{
     searchValue: string;
+    isDocumentReady: boolean = false;
+
+
+    ngOnInit(){
+    }
+
+    ngAfterViewChecked(){
+        this.isDocumentReady = true;
+    }
 }

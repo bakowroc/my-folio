@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
       this.Projects = [
-          {name: 'Cross app links',img: 1, technologies: [
+          {name: 'Cross app links', date: '5/12/2017', img: 1, technologies: [
               {name: 'HTML5'},
               {name: 'CSS3'},
               {name: 'SASS'},
@@ -22,25 +22,25 @@ export class ProjectsComponent implements OnInit {
               {name: 'Flask'},
               {name: 'PostgreSQL'}
           ]},
-          {name: 'WebCulator',img: 2, technologies: [
+          {name: 'WebCulator', date: '6/11/2016', img: 2, technologies: [
               {name: 'Angular 2'}
           ]},
-          {name: 'Newsfeed system',img: 3, technologies: [
+          {name: 'Newsfeed system', date: '12/3/2016', img: 3, technologies: [
               {name: 'HTML5'},
               {name: 'CSS3'},
               {name: 'SASS'},
               {name: 'Angular 2'},
               {name: 'Django'}
           ]},
-          {name: 'John lennon',img: 4, technologies: [
+          {name: 'John lennon', date: '3/15/2017', img: 4, technologies: [
               {name: 'Angular 2'},
               {name: 'Django'}
           ]},
-          {name: 'Cooper standards',img: 5, technologies: [
+          {name: 'Cooper standards', date: '8/9/2016', img: 5, technologies: [
               {name: 'Angular 2'},
               {name: 'Django'}
           ]},
-          {name: 'Logitech',img: 6, technologies: [
+          {name: 'Logitech', date: '7/7/2017', img: 6, technologies: [
               {name: 'Angular 2'},
               {name: 'Django'}
           ]}

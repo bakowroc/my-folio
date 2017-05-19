@@ -18,6 +18,7 @@ project{
             .name{
                 margin-top: 0;
                 transform: translateX(0);
+                border: 0;
             }
             .details{
                 opacity: 1;
@@ -55,15 +56,19 @@ project{
         z-index: $like-a-popup;
         overflow: hidden;
         .name{
-            margin: 0;
             color: white;
             font-size: 36px;
             width: auto;
-            float: left;
-            width: 100%;
-            transform: translateX(20px);
+            width: auto;
+            padding-bottom: 10px;
+            margin: 0 auto;
             margin-top: 27%;
+            border-bottom: 2px solid $flat-green;
             font-weight: 300;
+        }
+        .date{
+            color: #f0f0f0;
+            font-weight: 400;
         }
         .details{
             opacity: 0;

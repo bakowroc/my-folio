@@ -16,6 +16,7 @@ import {ToolComponent} from './technologies/tool/tool.component';
 import {AboutComponent} from './about/about.component';
 import {FooterComponent} from './footer/footer.component';
 
+
 @NgModule({
 
     imports: [

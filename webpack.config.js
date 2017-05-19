@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 
@@ -78,5 +79,19 @@ module.exports = {
             /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
             __dirname
     ),
+    new CopyWebpackPlugin([
+        {
+            from: './src/assets/img',
+            to: './img'
+        },
+        {
+            from: './node_modules/font-awesome/fonts',
+            to: './fonts'
+        },
+        {
+            from: './node_modules/font-awesome/css/font-awesome.min.css',
+            to: './css'
+        }
+    ]),
   ]
 };

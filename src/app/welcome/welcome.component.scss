@@ -2,7 +2,7 @@ welcome{
     float: left;
     width: 100%;
     height: 100vh;
-    background: darken($dark-blue-grey, 5%) url('../src/assets/img/bg.PNG');
+    background: darken($dark-blue-grey, 5%) url('img/bg.png');
     position: relative;
     border-bottom: 1px solid rgba(white, 0.05);
     .welcome-box{
