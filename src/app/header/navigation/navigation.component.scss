@@ -1,0 +1,42 @@
+navigation{
+    nav.main-navigation{
+        float: left;
+        width: 100%;
+        font-family: 'Fira Mono';
+        margin-top: 3px;
+        ul{
+            display: block;
+            float: left;
+            width: 100%;
+
+            li{
+                display: inline-block;
+                margin-right: 60px;
+                float: left;
+                width: auto;
+                &:first-child{
+                    margin-left: 40px;
+                }
+                &:last-child{
+                    margin-right: 40px;
+                }
+                a{
+                    float: left;
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 30px;
+                    text-align: center;
+                    color: #f0f0f0;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    transition-delay: 0s; 
+                    &:hover{
+                        color: $dark-blue-grey;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+}

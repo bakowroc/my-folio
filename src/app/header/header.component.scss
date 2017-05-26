@@ -1,0 +1,13 @@
+main-header{
+    header.main-header{
+        float: left;
+        width: auto;
+        position: fixed;
+        right: 40px;
+        top: 40px;
+        height: 80px;
+        padding: 20px;
+        background: $flat-green;
+        z-index: $mostly-on-top;
+    }
+}

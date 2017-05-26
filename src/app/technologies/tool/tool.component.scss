@@ -1,0 +1,19 @@
+tool{
+    float: right;
+    vertical-align: top;
+    background: #f0f0f0;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: $flat-green;
+    font-size: 26px;
+    &:nth-child(even){
+        clear: both;
+    }
+    @for $i from 1 through 12{
+        .#{size}-#{$i}{
+            padding: $i + 0px;
+            font-size: 6px + 3 * $i;
+        }
+    }
+}

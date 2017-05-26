@@ -1,0 +1,45 @@
+about{
+    float: left;
+    width: 100%;
+    height: auto;
+    padding: 250px 100px;
+    background: #f0f0f0;
+    .contact-section, .about-me-description{
+        float: left;
+        width: 50%;
+    }
+    .contact-section{
+        padding: 40px;
+        .address-row{
+            float: left;
+            font-size: 32px;
+            margin-bottom: 40px;
+            clear: both;
+            color: $flat-green;
+            i{
+                margin-right: 40px;
+            }
+            a{
+                color: inherit;
+                text-decoration: none;
+                &:hover{
+                    color: $dark-blue-grey;
+                }
+            }
+        }
+    }
+    .about-me-description{
+        text-align: justify;
+        font-size: 22px;
+        line-height: 1.55;
+        color: #999;
+        .cv-link{
+            @include button(transparent ,$flat-green, $flat-green, white);
+            display: block;
+            margin-top: 40px;
+            width: 250px;
+        }
+
+    }
+
+}

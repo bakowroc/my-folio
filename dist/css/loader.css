@@ -1,0 +1,69 @@
+.loader{
+    z-index: -1;
+}
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #31454D;
+}
+
+.loader>.loader-box{
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    background: red;
+    margin-top: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.loader>.loader-box>.spinner{
+    border-radius: 100%;
+    border: 2px solid transparent;
+    border-left: 2px solid #60A793;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: transparent;
+    animation: spinner 1s infinite linear;
+}
+
+.loader>.loader-box>.spinner.big{
+    width: 100px;
+    height: 100px;
+}
+
+.loader>.loader-box>.spinner.medium{
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.1s;
+    animation-duration: 1.3s;
+}
+
+.loader>.loader-box>.spinner.small{
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+
+    @keyframes spinner {
+        to{
+            transform: rotateZ(360deg);
+        }
+    }
+
+
+my-app:empty + .loader {
+    opacity: 1;
+    z-index: 500;
+}
