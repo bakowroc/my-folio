@@ -4,7 +4,6 @@ welcome{
     height: 100vh;
     background: darken($dark-blue-grey, 5%) url('img/bg.png');
     position: relative;
-    border-bottom: 1px solid rgba(white, 0.05);
     .welcome-box{
         margin: 0 auto;
         display: block;
