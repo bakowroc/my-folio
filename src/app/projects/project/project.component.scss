@@ -23,7 +23,7 @@ project{
             .details{
                 opacity: 1;
                 .technologies{
-                    transform: translateY(0);
+                    padding: 0 20px;
                 }
             }
         }
@@ -78,8 +78,7 @@ project{
             width: 100%;
             .technologies{
                 float: left;
-                transform: translateY(100%);
-                width: 90%;
+                width: 100%;
                 .tech{
                     float: left;
                     margin-right: 5px;
