@@ -13,37 +13,39 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
       this.Projects = [
-          {name: 'Cross app links', date: '5/12/2017', img: 1, technologies: [
+          {name: 'Cross app links', date: '5/12/2017', img: 'crossapp', technologies: [
               {name: 'HTML5'},
               {name: 'CSS3'},
               {name: 'SASS'},
+              {name: 'Bootstrap'},
               {name: 'AngularJS'},
               {name: 'Polymer'},
               {name: 'Flask'},
               {name: 'PostgreSQL'}
-          ]},
-          {name: 'WebCulator', date: '6/11/2016', img: 2, technologies: [
-              {name: 'Angular 2'}
-          ]},
-          {name: 'Newsfeed system', date: '12/3/2016', img: 3, technologies: [
+          ],
+            github: 'https://github.com/bakowroc/innovativeproject-cross-app-links',
+            demo: 'http://cross-app-links.herokuapp.com/'
+        },
+          {name: 'Newsfeed system', date: 'In progress', img: 3, technologies: [
               {name: 'HTML5'},
               {name: 'CSS3'},
               {name: 'SASS'},
+              {name: 'Bootstrap'},
               {name: 'Angular 2'},
               {name: 'Django'}
-          ]},
-          {name: 'John lennon', date: '3/15/2017', img: 4, technologies: [
-              {name: 'Angular 2'},
-              {name: 'Django'}
-          ]},
-          {name: 'Cooper standards', date: '8/9/2016', img: 5, technologies: [
-              {name: 'Angular 2'},
-              {name: 'Django'}
-          ]},
-          {name: 'Logitech', date: '7/7/2017', img: 6, technologies: [
-              {name: 'Angular 2'},
-              {name: 'Django'}
-          ]}
+          ],
+            github: 'https://github.com/bakowroc/newsfeed-system',
+            demo: '#'
+        },
+          {name: 'Curriculum vitae', date: '3/5/2017', img: 'folio', technologies: [
+              {name: 'HTML5'},
+              {name: 'CSS3'},
+              {name: 'SASS'},
+              {name: 'Bootstrap'},
+          ],
+            github: 'https://github.com/bakowroc/my-curriculum-vitae',
+            demo: '#'
+      }
       ];
   }
 }

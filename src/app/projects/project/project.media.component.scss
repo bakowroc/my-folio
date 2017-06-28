@@ -1,6 +1,23 @@
 @media only screen and (max-width: 1382px){
     project{
-        width: 50%;
+        height: 400px;
+        padding: 10px;
+        .project-overflow{
+            left: 20px;
+            right: 20px;
+            top: 20px;
+            bottom: 20px;
+            padding: 30px;
+            .name{
+                font-size: 24px;
+            }
+            .details{
+                .sources{
+                    left: 30px;
+                    right: 30px;
+                }
+            }
+        }
     }
 }
 @media only screen and (min-width: 992px){}

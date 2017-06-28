@@ -14,8 +14,8 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
       this.Menu = [
           {icon: 'folder-o', link: '#home'},
+          {icon: 'user-o', link: '#about'},
           {icon: 'image', link: '#projects'},
-           {icon: 'user-o', link: '#about'},
           {icon: 'code', link: '#skills'}
 
       ];

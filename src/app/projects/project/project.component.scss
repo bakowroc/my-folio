@@ -13,7 +13,8 @@ project{
         .img-background{
             opacity: 0.1;
             transform: scale(1.2);
-        }
+            }
+
         .project-overflow{
             .name{
                 margin-top: 0;
@@ -28,7 +29,7 @@ project{
             .details{
                 opacity: 1;
                 .technologies{
-                    transform: translateY(0);
+                    padding: 0 20px;
                 }
             }
         }
@@ -39,15 +40,14 @@ project{
         left: 0;
         right: 0;
         bottom: 0;
-        background: green;
+        background: $dark-blue-grey;
         z-index: $normalized;
         opacity: 1;
         filter: grayscale(1);
 
         img{
             height: 100%;
-            width: 100%;
-            filter: grayscale(50%);
+            filter: contrast(0.4) sepia(40%) grayscale(100%) opacity(0.5);
         }
     }
     .project-overflow{
@@ -76,6 +76,9 @@ project{
             background: rgba($flat-green, 0.9);
         }
         .date{
+            margin: 0;
+            float: left;
+            background: $flat-green;
             color: #f0f0f0;
             font-weight: 400;
             float: left;
@@ -91,8 +94,7 @@ project{
             width: 100%;
             .technologies{
                 float: left;
-                transform: translateY(100%);
-                width: 90%;
+                width: 100%;
                 .tech{
                     float: left;
                     margin-right: 5px;

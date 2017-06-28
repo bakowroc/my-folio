@@ -1,11 +1,11 @@
-import { Component, OnInit, OnChange } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 
 @Component({
     selector: 'technologies',
     templateUrl: 'technologies.component.html',
     styleUrls: ['technologies.component.scss']
 })
-export class TechnologiesComponent implements OnInit, OnChange {
+export class TechnologiesComponent implements OnInit, OnChanges {
 
     Technologies: Array<Object>;
     Tools: Array<Object>;
@@ -39,7 +39,7 @@ export class TechnologiesComponent implements OnInit, OnChange {
       ];
   }
 
-  ngOnChange(){
+  ngOnChanges(){
 
       console.log(this.hideAllShowMe);
 
