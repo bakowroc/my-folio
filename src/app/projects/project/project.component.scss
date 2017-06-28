@@ -5,9 +5,9 @@ project{
     padding: 20px;
     position: relative;
     overflow: hidden;
-    border: 20px solid transparent;
+    //border: 20px solid transparent;
+    background: white;
     &:hover {
-        border: 1px solid rgba(white, 0.15);
         transition-delay: 0.1s;
         background: rgba($flat-green, 1);
         .img-background{
@@ -19,6 +19,11 @@ project{
                 margin-top: 0;
                 transform: translateX(0);
                 border: 0;
+                background: transparent;
+                padding-left: 0;
+            }
+            .date{
+                opacity: 1;
             }
             .details{
                 opacity: 1;
@@ -36,7 +41,8 @@ project{
         bottom: 0;
         background: green;
         z-index: $normalized;
-        opacity: 0.15;
+        opacity: 1;
+        filter: grayscale(1);
 
         img{
             height: 100%;
@@ -57,18 +63,24 @@ project{
         overflow: hidden;
         .name{
             color: white;
-            font-size: 36px;
+            font-size: 28px;
             width: auto;
-            width: auto;
+            float: left;
+            clear: both;
             padding-bottom: 10px;
             margin: 0 auto;
-            margin-top: 27%;
-            border-bottom: 2px solid $flat-green;
-            font-weight: 300;
+            margin-top: 260px;
+            font-weight: 500;
+            padding: 10px;
+            text-transform: uppercase;
+            background: rgba($flat-green, 0.9);
         }
         .date{
             color: #f0f0f0;
             font-weight: 400;
+            float: left;
+            clear: both;
+            opacity: 0;
         }
         .details{
             opacity: 0;

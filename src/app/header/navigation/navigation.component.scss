@@ -11,14 +11,14 @@ navigation{
 
             li{
                 display: inline-block;
-                margin-right: 60px;
+                margin-bottom: 60px;
                 float: left;
                 width: auto;
                 &:first-child{
-                    margin-left: 40px;
+                    margin-top: 40px;
                 }
                 &:last-child{
-                    margin-right: 40px;
+                    margin-bottom: 40px;
                 }
                 a{
                     float: left;
@@ -27,10 +27,10 @@ navigation{
                     font-weight: 700;
                     font-size: 30px;
                     text-align: center;
-                    color: #f0f0f0;
+                    color: $flat-green;
                     text-decoration: none;
                     transition: all 0.3s ease;
-                    transition-delay: 0s; 
+                    transition-delay: 0s;
                     &:hover{
                         color: $dark-blue-grey;
                         transition: all 0.3s ease;

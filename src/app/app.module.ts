@@ -15,14 +15,17 @@ import {TechnologyComponent} from './technologies/technology/technology.componen
 import {ToolComponent} from './technologies/tool/tool.component';
 import {AboutComponent} from './about/about.component';
 import {FooterComponent} from './footer/footer.component';
-
+import {OnScrollDirective} from './shared/onscroll.directive';
 
 @NgModule({
 
     imports: [
         BrowserModule,
         FormsModule,
-        Angular2FontawesomeModule
+        Angular2FontawesomeModule,
+    ],
+    exports: [
+        OnScrollDirective
     ],
     declarations: [
         AppComponent,
@@ -35,7 +38,8 @@ import {FooterComponent} from './footer/footer.component';
         TechnologyComponent,
         ToolComponent,
         AboutComponent,
-        FooterComponent
+        FooterComponent,
+        OnScrollDirective
     ],
     providers: [],
     bootstrap: [AppComponent]

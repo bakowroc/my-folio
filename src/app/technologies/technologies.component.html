@@ -4,7 +4,12 @@
     </tool>
 </section>
 <section class="tech-wrap">
-    <technology *ngFor = "let technology of Technologies"
-                [technology] = "technology">
+    <technology *ngFor = "let technology of Technologies let i = index"
+                [technology] = "technology"
+                [inputIndex] = 'i'
+                (hideAllShowMe) = 'hideAllShowMe'>
     </technology>
+    <div class="show-technology-detail" *ngIf = '!hideAllShowMe'>
+        
+    </div>
 </section>

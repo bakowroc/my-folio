@@ -2,12 +2,12 @@ main-header{
     header.main-header{
         float: left;
         width: auto;
-        position: fixed;
-        right: 40px;
-        top: 40px;
-        height: 80px;
+        position: absolute;
+        right: 120px;
+        top: 23%;
+        width: 80px;
         padding: 20px;
-        background: $flat-green;
+        background: none;
         z-index: $mostly-on-top;
     }
 }
