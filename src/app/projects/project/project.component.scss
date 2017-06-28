@@ -13,12 +13,19 @@ project{
         .img-background{
             opacity: 0.1;
             transform: scale(1.2);
-        }
+            }
+        
         .project-overflow{
             .name{
                 margin-top: 0;
                 transform: translateX(0);
-                border: 0;
+                background: transparent;
+                padding: 0;
+            }
+            .date{
+                background: transparent;
+                padding: 0;
+
             }
             .details{
                 opacity: 1;
@@ -34,14 +41,13 @@ project{
         left: 0;
         right: 0;
         bottom: 0;
-        background: green;
+        background: $dark-blue-grey;
         z-index: $normalized;
-        opacity: 0.15;
+        opacity: 0.9;
 
         img{
             height: 100%;
-            width: 100%;
-            filter: grayscale(50%);
+            filter: contrast(0.4) sepia(40%) grayscale(100%) opacity(0.5);
         }
     }
     .project-overflow{
@@ -59,15 +65,21 @@ project{
             color: white;
             font-size: 36px;
             width: auto;
-            padding-bottom: 10px;
+            background: $dark-blue-grey;
             margin: 0 auto;
             margin-top: 27%;
-            border-bottom: 2px solid $flat-green;
-            font-weight: 300;
+            float: left;
+            font-weight: 600;
+            padding: 7px;
         }
         .date{
+            margin: 0;
+            float: left;
+            background: $flat-green;
             color: #f0f0f0;
             font-weight: 400;
+            clear: both;
+            padding: 4px;
         }
         .details{
             opacity: 0;
