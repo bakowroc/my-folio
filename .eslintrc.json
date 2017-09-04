@@ -1,13 +1,13 @@
 {
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "parser": "babel-eslint"
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "rules": {
-        "semi": 2
-    }
+    "parser": "babel-eslint"
+  },
+  "rules": {
+    "semi": 2
+  }
 }
