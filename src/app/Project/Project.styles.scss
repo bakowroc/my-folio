@@ -15,7 +15,7 @@ Project {
       opacity: 1;
     }
 
-    .image {
+    >.image {
       transform: rotateZ(10deg) scale(1.5);
     }
   }
@@ -36,10 +36,79 @@ Project {
     }
   }
 
-  .image {
+  >.image {
     height: 100%;
     opacity: .15;
     position: absolute;
     z-index: 2;
+  }
+
+  .project-details {
+    background: $dark-blue-color;
+    bottom: 0;
+    cursor: auto;
+    display: grid;
+    grid-template: repeat(3, 33.333vh) / 20vw 80vw;
+    grid-template-areas:
+    'project-title preview'
+    'project-tech preview'
+    'project-more preview';
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+    .project-title {
+      @include content-box;
+      background: darken($dark-blue-color, 2%);
+      font-size: 48px;
+      font-weight: 300;
+      grid-area: project-title;
+      padding: 80px;
+      text-align: left;
+    }
+
+    .project-tech {
+      @include content-box;
+      background: darken($dark-blue-color, 3%);
+      grid-area: project-tech;
+    }
+
+    .project-more {
+      @include content-box;
+      background: darken($dark-blue-color, 4%);
+      grid-area: project-more;
+    }
+
+    .preview {
+      @include content-box;
+      grid-area: preview;
+      overflow: auto;
+
+      > .image {
+        width: 100%;
+      }
+    }
+
+    .close-button {
+      @include content-box;
+      background: $primary-color;
+      cursor: pointer;
+      font-size: 20px;
+      height: 60px;
+      left: 20px;
+      position: fixed;
+      top: 20px;
+      width: 60px;
+
+      &:hover {
+        opacity: .6;
+      }
+
+      &::after {
+        content: '\2716';
+      }
+    }
   }
 }

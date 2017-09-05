@@ -1,5 +1,6 @@
 * {
-  transition: all .2s ease; /* no*/
+  box-sizing: border-box;
+  transition: all .2s ease;
 }
 
 App {
@@ -10,7 +11,7 @@ App {
   grid-template-areas:
   'p1 name p2 p3 p4'
   'p5 logo skills p6 p7'
-  'p8 p9 contact p10 p11'
+  'p8 p9 contact p10 p11';
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,5 +1,26 @@
-<img class="image" src="{{ projectData.image }}"/>
+<img
+  class="image"
+  src="{{ projectData.image }}"
+  (click)="showDetails = true"
+/>
 <div class="content">
   <h1 class="title">{{ projectData.title }}</h1>
   <h3 class="date">{{ projectData.date | date : short}}</h3>
 </div>
+
+<section class="project-details" *ngIf="showDetails">
+  <div class="project-title">
+    <span
+      class="close-button"
+      (click)="showDetails=false"
+    >
+    </span>
+
+    {{ projectData.title }}
+  </div>
+  <div class="project-tech">{{ projectData.date }}</div>
+  <div class="project-more">{{ projectData.date }}</div>
+  <div class="preview">
+    <img class="image" src="{{ projectData.image }}"/>
+  </div>
+</section>
