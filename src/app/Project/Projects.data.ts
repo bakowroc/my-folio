@@ -17,7 +17,7 @@ export const ProjectsData: Array<ProjectInterface> = [
   },
   {
     area: 'p3',
-    date: new Date(),
+    date: new Date('07/30/1995'),
     image: 'https://unsplash.it/1602/900?random',
     link: '#',
     title: 'Some great title'

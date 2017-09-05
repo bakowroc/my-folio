@@ -14,13 +14,55 @@ App {
   'p8 p9 contact p10 p11';
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $small-screen) {
   App {
-    grid-auto-rows: true;
+    grid-auto-rows: 33.3333vh;
     grid-template-areas:
-    'p1 p2 p3 p4'
-    'p5 p6 p7 p8'
-    'p9 p10 p11 p11';
-    grid-template-columns: repeat(4, 25vw);
+    'name name skills p2'
+    'logo contact p3 p4'
+    'p1 p5 p6 p7'
+    'p8 p9 p10 p11';
+    grid-template-columns: repeat(4, 25%);
   }
+}
+
+@media screen and (max-width: $small-phone-screen) {
+  App {
+    grid-auto-rows: 50vh;
+    grid-template: 100vh / repeat(2, 50%);
+    grid-template-areas:
+    'logo name'
+    'skills contact'
+    'p1 p2'
+    'p3 p4'
+    'p5 p6'
+    'p7 p8'
+    'p9 p10';
+  }
+
+  .p11 {display: none;}
+}
+
+@media screen and (max-width: $extra-small-phone-screen) {
+  App {
+    grid-auto-rows: 33.333vh;
+    grid-template: repeat(3, 33.333vh) / 100%;
+    grid-template-areas:
+    'name'
+    'skills'
+    'contact'
+    'p1'
+    'p2'
+    'p3'
+    'p4'
+    'p5'
+    'p6'
+    'p7'
+    'p8'
+    'p9'
+    'p10'
+    'p11';
+  }
+  Logo {display: none;}
+  .p11 {display: flex;}
 }
