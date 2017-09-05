@@ -1,3 +1,11 @@
-<ContentBox></ContentBox>
+<Project
+  *ngFor="let project of Projects"
+  class = "{{ project.area }}"
+  [projectData] = " project "
+>
+</Project>
 
-Hello world!
+<Name></Name>
+<Logo></Logo>
+<Skills></Skills>
+<Contact></Contact>

@@ -1,0 +1,9 @@
+Name {
+  @include content-box;
+  background: $secondary-color;
+  font-size: 64px;
+  font-weight: 300;
+  grid-area: name;
+  padding: 80px;
+  text-align: left;
+}

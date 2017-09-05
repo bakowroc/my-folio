@@ -2,13 +2,21 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { App } from './App.component';
-import { ContentBox } from './ContentBox/ContentBox.component';
+import { Contact } from './Contact/Contact.component';
+import { Logo } from './Logo/Logo.component';
+import { Name } from './Name/Name.component';
+import { Project } from './Project/Project.component';
+import { Skills } from './Skills/Skills.component';
 
 @NgModule({
   bootstrap: [App],
   declarations: [
     App,
-    ContentBox
+    Contact,
+    Logo,
+    Name,
+    Project,
+    Skills
   ],
   imports: [
     BrowserModule

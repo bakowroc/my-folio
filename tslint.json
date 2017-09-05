@@ -80,7 +80,7 @@
     "number-literal-format": true,
     "object-literal-shorthand": true,
     "import-spacing": true,
-    "array-type": true,
+    "array-type": false,
     "arrow-parens": true,
     "arrow-return-shorthand": true,
     "binary-expression-operand-order": true,

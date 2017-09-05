@@ -1,0 +1,9 @@
+@mixin content-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
