@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack --progress",
     "build:prod": "cross-env APP_ENVIRONMENT=production webpack -p --progress",
-    "start": "webpack-dev-server --config ./webpack.config.js"
+    "start": "webpack-dev-server --open --color --progress"
   },
   "dependencies": {
     "@angular/common": "^2.3.0",
@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^2.3.0",
     "@angular/router": "^3.3.0",
     "@types/angular": "^1.6.32",
+    "angular2-draggable": "^1.0.1",
     "core-js": "^2.4.1",
     "normalize.css": "^7.0.0",
     "rxjs": "^5.0.0-rc.4",

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AngularDraggableModule } from 'angular2-draggable';
 
 import { App } from './App.component';
 import { Contact } from './Contact/Contact.component';
@@ -21,6 +22,7 @@ import { Skills } from './Skills/Skills.component';
     Skills
   ],
   imports: [
+    AngularDraggableModule,
     BrowserModule
   ]
 })
