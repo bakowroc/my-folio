@@ -6,6 +6,7 @@ import { Contact } from './Contact/Contact.component';
 import { Logo } from './Logo/Logo.component';
 import { Name } from './Name/Name.component';
 import { Project } from './Project/Project.component';
+import { ProjectPreview } from './ProjectPreview/ProjectPreview.component';
 import { Skills } from './Skills/Skills.component';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { Skills } from './Skills/Skills.component';
     Logo,
     Name,
     Project,
+    ProjectPreview,
     Skills
   ],
   imports: [

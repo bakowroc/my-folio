@@ -1,8 +1,18 @@
-var webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
+const Dashboard = require('webpack-dashboard');
+const DashboardPlugin = require('webpack-dashboard/plugin');
+const dashboard = new Dashboard();
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const port = 3000;
 
 module.exports = {
   devServer: {
+    color: true,
+    inline: true,
+    quiet: true,
+    open: true,
+    port: port,
     publicPath: "/",
     contentBase: "./dist"
   },
@@ -96,5 +106,9 @@ module.exports = {
         to: './css'
       }
     ]),
+    new DashboardPlugin({
+      port: port,
+      handler: dashboard.setData
+    })
   ]
 };

@@ -11,8 +11,17 @@ import { ProjectsData } from './Project/Projects.data';
 export class App {
 
   private Projects: Array<ProjectInterface>;
+  private selectedProject: ProjectInterface;
 
   public ngOnInit() {
     this.Projects = ProjectsData;
+  }
+
+  private onPreviewSelect = (project: ProjectInterface): void => {
+    this.selectedProject = project;
+  }
+
+  private onPreviewClose = (): void => {
+    this.selectedProject = null;
   }
 }

@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack --progress",
     "build:prod": "cross-env APP_ENVIRONMENT=production webpack -p --progress",
-    "start": "webpack-dev-server --inline --progress --color"
+    "start": "webpack-dev-server --config ./webpack.config.js"
   },
   "dependencies": {
     "@angular/common": "^2.3.0",
@@ -24,6 +24,7 @@
     "core-js": "^2.4.1",
     "normalize.css": "^7.0.0",
     "rxjs": "^5.0.0-rc.4",
+    "webpack-dashboard": "^1.0.0-5",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {

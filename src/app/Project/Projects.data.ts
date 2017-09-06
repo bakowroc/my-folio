@@ -4,15 +4,43 @@ export const ProjectsData: Array<ProjectInterface> = [
   {
     area: 'p1',
     date: new Date(),
-    image: 'https://unsplash.it/1601/900?random',
+    image: 'https://unsplash.it/1920/1080?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
     area: 'p2',
     date: new Date(),
-    image: 'https://unsplash.it/1600/901?random',
+    image: 'https://unsplash.it/1920/1081?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
@@ -20,62 +48,188 @@ export const ProjectsData: Array<ProjectInterface> = [
     date: new Date('07/30/1995'),
     image: 'https://unsplash.it/1602/900?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
     area: 'p4',
     date: new Date(),
-    image: 'https://unsplash.it/1600/902?random',
+    image: 'https://unsplash.it/1920/1082?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
     area: 'p5',
     date: new Date(),
-    image: 'https://unsplash.it/1603/900?random',
+    image: 'https://unsplash.it/1921/1082?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
     area: 'p6',
     date: new Date(),
-    image: 'https://unsplash.it/1600/903?random',
+    image: 'https://unsplash.it/1924/1082?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
     area: 'p7',
     date: new Date(),
-    image: 'https://unsplash.it/1604/900?random',
+    image: 'https://unsplash.it/1922/1080?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
     area: 'p8',
     date: new Date(),
-    image: 'https://unsplash.it/1600/904?random',
+    image: 'https://unsplash.it/1919/1081?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
     area: 'p9',
     date: new Date(),
-    image: 'https://unsplash.it/1605/900?random',
+    image: 'https://unsplash.it/1920/1088?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
     area: 'p10',
     date: new Date(),
-    image: 'https://unsplash.it/1600/905?random',
+    image: 'https://unsplash.it/1922/1084?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   },
   {
     area: 'p11',
     date: new Date(),
-    image: 'https://unsplash.it/1606/900?random',
+    image: 'https://unsplash.it/1919/1088?random',
     link: '#',
+    technologies: [
+      {
+        name: 'Angular',
+        percent: 60
+      },
+      {
+        name: 'Django',
+        percent: 30
+      },
+      {
+        name: 'Polymer',
+        percent: 10
+      }
+    ],
     title: 'Some great title'
   }
 ];

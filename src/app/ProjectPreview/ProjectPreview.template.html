@@ -1,0 +1,24 @@
+<div class="project-title">
+  <span
+    class="close-button"
+    (click)="onClose()"
+  >
+  </span>
+
+  {{ activeProject.title }}
+</div>
+<div class="project-tech">
+  <div
+    *ngFor="let technology of activeProject.technologies"
+    class="technology"
+  >
+    <div class="technology-name">{{ technology.name }}</div>
+    <div class="technology-bar">
+      <div class="percent p-{{ technology.percent }}"></div>
+    </div>
+  </div>
+</div>
+<div class="project-more">{{ activeProject.date | date: short }}</div>
+<div class="preview">
+  <img class="image" src="{{ activeProject.image }}"/>
+</div>

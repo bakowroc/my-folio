@@ -1,9 +1,17 @@
 <Project
   *ngFor="let project of Projects"
   class = "{{ project.area }}"
-  [projectData] = " project "
+  [projectData] = "project"
+  (click) = "onPreviewSelect(project)"
 >
 </Project>
+
+<ProjectPreview
+  *ngIf = "selectedProject"
+  [activeProject] = "selectedProject"
+  [onClose] = "onPreviewClose"
+>
+</ProjectPreview>
 
 <Name></Name>
 <Logo></Logo>
