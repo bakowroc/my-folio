@@ -2,4 +2,39 @@ Skills {
   @include content-box;
   background: $primary-color;
   grid-area: skills;
+
+  .skill-cloud {
+    @include content-box;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 75%;
+    overflow: visible;
+
+    .skill {
+      text-shadow: 0 19px 38px rgba(0, 0, 0, .30), 0 15px 12px rgba(0, 0, 0, .22);
+      cursor: default;
+      font-weight: 300;
+
+      &.font-small {
+        font-size: 16px;
+      }
+
+      &.font-medium {
+        font-size: 22px;
+      }
+
+      &.font-large {
+        font-size: 30px;
+      }
+
+      &.font-xlarge {
+        font-size: 34px;
+      }
+
+      &.bold {
+        font-weight: 600;
+      }
+    }
+  }
 }

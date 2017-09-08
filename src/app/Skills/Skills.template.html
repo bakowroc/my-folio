@@ -1,1 +1,9 @@
-skills
+<div class="skill-cloud">
+  <span
+    *ngFor="let skill of Skills"
+    class="skill font-{{ skill.size }}"
+    [ngClass] ="{ 'bold': skill.bold }"
+  >
+    {{ skill.name }}
+  </span>
+</div>
