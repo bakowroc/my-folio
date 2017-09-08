@@ -1,6 +1,7 @@
 export interface ProjectInterface {
   area: any;
   date: Date;
+  id: number;
   image: string;
   link: string;
   title: string;

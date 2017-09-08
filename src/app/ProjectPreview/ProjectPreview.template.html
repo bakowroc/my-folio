@@ -18,8 +18,16 @@
     </div>
   </div>
 </div>
-<div class="project-more">{{ activeProject.date | date: short }}</div>
+<div class="project-more">{{ activeProject.id }} / {{ Projects.length }}</div>
 <div class="preview">
+  <span
+    class="arrow arrow-prev"
+    (click) = "onPrev()"
+  ></span>
+  <span
+    class="arrow arrow-next"
+    (click) = "onNext()"
+  ></span>
   <div class="image-overflow" ngDraggable>
     <img class="image" src="{{ activeProject.image }}"/>
   </div>

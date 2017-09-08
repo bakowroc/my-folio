@@ -69,6 +69,7 @@ ProjectPreview {
   .project-more {
     @include content-box;
     background: darken($dark-blue-color, 4%);
+    font-size: 48px;
     grid-area: project-more;
   }
 
@@ -77,6 +78,41 @@ ProjectPreview {
     grid-area: preview;
     overflow: hidden;
     padding: 0;
+    position: relative;
+
+    .arrow {
+      background: $secondary-color;
+      color: $main-whitish-color;
+      cursor: pointer;
+      padding: 10px;
+      position: absolute;
+      text-transform: uppercase;
+      z-index: 20000000000000000000000000000;
+
+      &:hover {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, .20), 0 15px 12px rgba(0, 0, 0, .12);
+      }
+
+      &:nth-child(odd) {
+        margin-right: auto;
+      }
+
+      &.arrow-next{
+        right: 20px;
+
+        &:after {
+          content: 'Next';
+        }
+      }
+
+      &.arrow-prev{
+        left: 20px;
+
+        &:after {
+          content: 'Prev';
+        }
+      }
+    }
 
     .image-overflow {
       box-shadow: 0 19px 38px rgba(0, 0, 0, .30), 0 15px 12px rgba(0, 0, 0, .22);
