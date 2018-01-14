@@ -15,7 +15,7 @@ Project {
     }
 
     >.image {
-      transform: rotateZ(10deg) scale(1.5);
+      transform: rotateZ(10deg);
     }
   }
 
@@ -36,9 +36,10 @@ Project {
   }
 
   >.image {
-    height: 100%;
+    left: 0;
     opacity: .15;
     position: absolute;
+    top: 0;
     z-index: 2;
   }
 }
